@@ -89,7 +89,7 @@ elif [ -n "$MEDIA_FILE" ]; then
   [ -f "$MEDIA_FILE" ] || err "File not found: $MEDIA_FILE"
   NAME="$(basename "${MEDIA_FILE%.*}")"
   log "Transcribing $MEDIA_FILE (this can take a while)…"
-  TRANSCRIPT="$("$FABRIC" --transcribe-file "$MEDIA_FILE" "${MODEL_ARGS[@]}")" \
+  TRANSCRIPT="$("$FABRIC" --transcribe-file "$MEDIA_FILE" ${MODEL_ARGS[@]+"${MODEL_ARGS[@]}"})" \
     || err "Transcription failed. Check that your fabric transcription model is configured."
 else
   [ -f "$INPUT_FILE" ] || err "File not found: $INPUT_FILE"
@@ -107,7 +107,7 @@ log "Transcript saved to $OUT_DIR/transcript.txt ($(printf '%s' "$TRANSCRIPT" | 
 run_pattern() {
   local pattern="$1" outfile="$2"
   log "Generating $outfile …"
-  if printf '%s' "$TRANSCRIPT" | "$FABRIC" -p "$pattern" "${MODEL_ARGS[@]}" > "$OUT_DIR/$outfile" 2>"$OUT_DIR/.$pattern.err"; then
+  if printf '%s' "$TRANSCRIPT" | "$FABRIC" -p "$pattern" ${MODEL_ARGS[@]+"${MODEL_ARGS[@]}"} > "$OUT_DIR/$outfile" 2>"$OUT_DIR/.$pattern.err"; then
     rm -f "$OUT_DIR/.$pattern.err"
   else
     printf '\033[33mWARN:\033[0m %s failed — see %s\n' "$pattern" "$OUT_DIR/.$pattern.err" >&2

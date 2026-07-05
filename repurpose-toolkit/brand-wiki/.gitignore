@@ -1,0 +1,14 @@
+# DB 26 — canonical vault (consolidated 2026-07-03).
+# Repo tracks: Envisioned wiki/, raw/, unreconciled wiki archive, key root docs.
+/*
+!/.gitignore
+!/Envisioned wiki/
+!/raw/
+!/_archive/
+/_archive/*
+!/_archive/old-vault-wiki-UNRECONCILED-2026-07-03/
+!/agents.md
+!/00 — START HERE.md
+.DS_Store
+.obsidian/
+.trash/
