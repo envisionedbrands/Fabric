@@ -57,10 +57,16 @@ VIDEO=/path/to/source.mp4 ./make_clips.sh
 
 > Always eyeball the timestamps in `shorts_clips.md` before publishing — the AI picks the moments, but a human should confirm the cut points.
 
+## Brand voice
+
+The four writing patterns (Twitter, LinkedIn, Instagram, YouTube) are pre-loaded with the **María-Inés / Envisioned Systems** voice — diagnostic fragments, the "Not X, but Y" correction, em-dash pauses, the forbidden-phrase list, and the "keep it Tuesday, not civilization" rule. The full spec lives in `patterns/_brand_voice.md`; a condensed version is baked into each pattern's `system.md`. So output sounds like María-Inés, not like generic AI, out of the box.
+
+To adapt for a different client, edit the `# BRAND VOICE` block at the top of each pattern's `system.md` (or duplicate a pattern, e.g. `create_linkedin_post_acme`, with that client's rules).
+
 ## Using it for clients
 
 - Keep one output folder per client/episode: `-o ./clients/acme/2026-07-04-ep42`.
-- The patterns live in `patterns/` — edit `system.md` files to bake in a client's voice, banned words, CTA links, or hashtag sets, and the changes apply on the next run. You can also duplicate a pattern per client (e.g. `create_linkedin_post_acme`).
+- The patterns live in `patterns/` — edit `system.md` files to bake in a client's voice, banned words, CTA links, or hashtag sets, and the changes apply on the next run.
 - Cost per run is just your API usage — typically a few cents per video with a mid-tier model.
 
 ## What this deliberately does NOT do (yet)
