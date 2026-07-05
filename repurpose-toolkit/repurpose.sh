@@ -54,7 +54,14 @@ while getopts "y:f:a:o:m:sh" opt; do
   esac
 done
 
-command -v fabric >/dev/null 2>&1 || err "fabric is not installed. See README.md for setup."
+# The Homebrew formula installs the binary as `fabric-ai`; other installs use `fabric`.
+if command -v fabric >/dev/null 2>&1; then
+  FABRIC=fabric
+elif command -v fabric-ai >/dev/null 2>&1; then
+  FABRIC=fabric-ai
+else
+  err "fabric is not installed (looked for 'fabric' and 'fabric-ai'). See README.md for setup."
+fi
 [ -n "$YOUTUBE_URL$INPUT_FILE$MEDIA_FILE" ] || usage
 
 MODEL_ARGS=()
@@ -76,13 +83,13 @@ TRANSCRIPT=""
 if [ -n "$YOUTUBE_URL" ]; then
   NAME="$(printf '%s' "$YOUTUBE_URL" | sed -E 's#.*[?&]v=([A-Za-z0-9_-]{6,}).*#\1#; s#.*/##')"
   log "Fetching transcript (with timestamps) from YouTube…"
-  TRANSCRIPT="$(fabric -y "$YOUTUBE_URL" --transcript-with-timestamps)" \
+  TRANSCRIPT="$("$FABRIC" -y "$YOUTUBE_URL" --transcript-with-timestamps)" \
     || err "Could not fetch transcript. Is the video public and captioned?"
 elif [ -n "$MEDIA_FILE" ]; then
   [ -f "$MEDIA_FILE" ] || err "File not found: $MEDIA_FILE"
   NAME="$(basename "${MEDIA_FILE%.*}")"
   log "Transcribing $MEDIA_FILE (this can take a while)…"
-  TRANSCRIPT="$(fabric --transcribe-file "$MEDIA_FILE" "${MODEL_ARGS[@]}")" \
+  TRANSCRIPT="$("$FABRIC" --transcribe-file "$MEDIA_FILE" "${MODEL_ARGS[@]}")" \
     || err "Transcription failed. Check that your fabric transcription model is configured."
 else
   [ -f "$INPUT_FILE" ] || err "File not found: $INPUT_FILE"
@@ -100,7 +107,7 @@ log "Transcript saved to $OUT_DIR/transcript.txt ($(printf '%s' "$TRANSCRIPT" | 
 run_pattern() {
   local pattern="$1" outfile="$2"
   log "Generating $outfile …"
-  if printf '%s' "$TRANSCRIPT" | fabric -p "$pattern" "${MODEL_ARGS[@]}" > "$OUT_DIR/$outfile" 2>"$OUT_DIR/.$pattern.err"; then
+  if printf '%s' "$TRANSCRIPT" | "$FABRIC" -p "$pattern" "${MODEL_ARGS[@]}" > "$OUT_DIR/$outfile" 2>"$OUT_DIR/.$pattern.err"; then
     rm -f "$OUT_DIR/.$pattern.err"
   else
     printf '\033[33mWARN:\033[0m %s failed — see %s\n' "$pattern" "$OUT_DIR/.$pattern.err" >&2
