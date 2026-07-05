@@ -45,8 +45,17 @@ The strategy doc exists in 7+ copies across formats and dates (`content-engine.m
 
 - **`/watch` skill** — needs identifying. If it's the fswatch daemon that feeds HyperFrame's studio folder, it belongs to Layer 3. If it's a "watch this video → summarize" skill, it may overlap with the repurpose-toolkit's intake and should be folded in or retired. Confirm what it does.
 
+## The unified pipeline: `/repurpose-studio`
+
+After auditing all seven video skills on the Mac (clipify, cut-video, video-use, clip-cutter, hyperframes-helper, create-video, video-analyzer), the consolidation is:
+
+- **Keep as building blocks:** video-use (edit engine), cut-video (tightener), hyperframes-helper (motion graphics), create-video (separate product — AI promo videos)
+- **One clip-maker:** **clipify** (cuts + 9:16 reframe + karaoke captions). **Retire clip-cutter** (subset of clipify). **HyperFrame is legacy** — superseded by clipify + this pipeline.
+- **The brain:** repurpose-toolkit selects clip moments against the **brand compass** (three pillars, Type 1/2/3 red-flag filter, sensory grounding — see `patterns/_brand_compass.md`) and writes all copy in brand voice.
+- **The orchestrator:** `skills/repurpose-studio/SKILL.md` — install to `~/.claude/skills/repurpose-studio/` and one command chains: cut-video → repurpose-toolkit → clipify (→ hyperframes).
+
 ## One-line answer to "which tool do I use?"
 
-- **Recorded a video/podcast and want it everywhere** → repurpose-toolkit, then HyperFrame for the clips.
+- **Long horizontal video → everything (clean master + on-brand reels + all posts)** → `/repurpose-studio` on the Mac.
+- **Just the text kit from a YouTube link** → `repurpose.sh -y` anywhere.
 - **Starting from monthly themes, no video** → Content Engine.
-- **Have a talking-head clip that needs captions + vertical** → HyperFrame directly.
