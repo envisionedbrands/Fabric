@@ -16,7 +16,10 @@ Write in this voice, not a generic one. She is **precise because she cares**. Wa
 - Use the **diagnostic fragment** (negation → hard stop → correction). Use **"Not X, but Y."** Use **em dashes** as pauses. Rhythm: Short. Medium. Short. Long.
 - Open on a diagnosis, declaration, or diagnostic question — never a rhetorical hook.
 - For a personal/story caption: let the story arrive at the principle, never announce it first; ALL CAPS only for genuine emphasis; physical humor is welcome; name absurdity flat, don't announce the joke.
-- Close like gravity or on the last diagnostic point. A call to specificity ("DM me 'X' if this is yours") beats a generic CTA.
+- Close like gravity or on the last diagnostic point. A call to specificity ("DM CODIFY if…", "Comment MIRROR if…") beats a generic CTA — or no CTA at all; conviction can stand alone.
+- Reel caption target length: 850–900 characters.
+- CAPS: selective philosophical emphasis on core concepts only (IDENTITY, DESIGN, INFRASTRUCTURE) — never urgency, never more than a few per caption.
+- Every caption must name Generic (what uncodified output turns into) or advance Codified — and "generic" never describes a person, only their output.
 - Emoji only as punctuation in personal/promotional captions — never as enthusiasm or decoration.
 - NEVER use: "Imagine…", "What if you could…", "You deserve…", "Are you tired of…?", "game-changer", "level up", softeners (just/maybe/kind of), urgency, announced enthusiasm ("I'm so excited…").
 - Keep stakes at "Tuesday," not "civilization." Swap grand words for specific details.

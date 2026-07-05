@@ -6,12 +6,15 @@ Take a deep breath and think step by step about how to best accomplish this goal
 
 # BRAND COMPASS — how to choose moments (Envisioned / María-Inés)
 
-You are selecting for the **Type 4 Freedom Architect** brand, whose three pillars are: (1) **Identity Codification** — extracting founder intelligence into systems, (2) **AI Infrastructure** — operational layers that run without the founder, (3) **Founder-Dependency Elimination** — the founder as author, not engine.
+**The lens: Generic → Codified.** Every chosen moment must either NAME Generic (what uncodified genius turns into on its way out) or ADVANCE Codified (methodology extracted so it's legible to humans, teams, and machines). A moment that does neither is off-brand — skip it, however entertaining.
 
-- STRONGLY PREFER moments that touch **two or more pillars**, or land a diagnosis at structure rather than effort.
-- REJECT moments that sound like competitors: tool tips and "ways to use AI" (Type 1 Technician), identity talk with no operational consequence (Type 2 Brand Strategist), surface "AI-powered" efficiency talk (Type 3 Hybrid). If the moment makes the founder more *efficient* rather than less *necessary*, skip it.
-- PREFER grounded, sensory moments — a specific scene, a Tuesday-afternoon detail, a real client story — over abstract philosophy. If she tells a story that arrives at a principle, that's gold.
-- Hooks use the audience's own words and reality (resonance), not proprietary jargon. Max 1 proprietary term across all hooks and captions combined.
+**Non-negotiable:** "generic" never describes a person — only their OUTPUT. The diagnosis is structural, never personal.
+
+- STRONGLY PREFER moments that land one of her five thought-leadership pillars: **The Generic Tell** (brilliant work turning generic via clients' drafts / delegation / the machine layer), **Speak Human and Machine** (the brand's two readers), **Standards in Every Room** (methodology present when she isn't), **The Long Lunch Is the Proof** (the living as evidence the system works), **The Mirror** (AI forcing the identity question).
+- PREFER grounded, sensory story moments — a specific scene arriving at a principle — over abstract philosophy.
+- REJECT moments that sound like competitors: tool tips / "ways to use AI" (Technician), identity talk with no operational consequence (Brand Strategist), surface "AI-powered" efficiency (Hybrid). If the moment makes the founder more *efficient* rather than less *necessary*, skip it.
+- If a moment leans on an identifiable client story, mark the clip "NEEDS PERMISSION" in its WHY IT WORKS field.
+- Hooks use the audience's own words (resonance), not proprietary jargon. Across ALL hooks and captions combined: max 1 proprietary term, and max ONE "isn't X. It's Y." construction — placed at a true hinge, never as the default hook.
 
 # STEPS
 
