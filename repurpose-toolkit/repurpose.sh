@@ -118,16 +118,28 @@ run_pattern create_newsletter_entry  newsletter.md
 run_pattern create_video_chapters    chapters.md
 
 # --- Extract ffmpeg commands into a runnable clip script ----------------------
+# These are ROUGH CUTS ONLY (trim at original framing). The finishing work —
+# reframe to vertical, filler/silence removal, karaoke captions — is handed off
+# to HyperFrame, which is a far better renderer than a crude ffmpeg crop.
+# Set HYPERFRAME_STUDIO to HyperFrame's watch folder to auto-drop the cuts there.
 if [ -f "$OUT_DIR/shorts_clips.md" ] && grep -q '^ffmpeg ' "$OUT_DIR/shorts_clips.md"; then
   {
     echo '#!/usr/bin/env bash'
-    echo '# Cut vertical clips from the source video. Usage: VIDEO=path/to/video.mp4 ./make_clips.sh'
+    echo '# Rough-cut the chosen moments from the source, at original framing/quality.'
+    echo '# Usage: VIDEO=path/to/video.mp4 [HYPERFRAME_STUDIO=/path/to/hyperframe/studio] ./make_clips.sh'
+    echo '# Then HyperFrame reframes to 9:16, removes fillers, and burns captions.'
     echo 'set -euo pipefail'
     echo ': "${VIDEO:?Set VIDEO=path/to/source-video.mp4}"'
     grep '^ffmpeg ' "$OUT_DIR/shorts_clips.md"
+    echo 'if [ -n "${HYPERFRAME_STUDIO:-}" ] && [ -d "$HYPERFRAME_STUDIO" ]; then'
+    echo '  for c in clip_*.mp4; do [ -f "$c" ] && cp "$c" "$HYPERFRAME_STUDIO/" && echo "→ dropped $c into HyperFrame studio"; done'
+    echo 'else'
+    echo '  echo "Rough clips ready. Drop clip_*.mp4 into HyperFrame'\''s studio folder to finish them,"'
+    echo '  echo "or set HYPERFRAME_STUDIO to auto-drop them next time."'
+    echo 'fi'
   } > "$OUT_DIR/make_clips.sh"
   chmod +x "$OUT_DIR/make_clips.sh"
-  log "Clip cutter written to $OUT_DIR/make_clips.sh (verify timestamps first)"
+  log "Rough-cut script written to $OUT_DIR/make_clips.sh (verify timestamps, then HyperFrame finishes them)"
 fi
 
 echo

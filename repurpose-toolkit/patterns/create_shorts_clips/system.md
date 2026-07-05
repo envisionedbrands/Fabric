@@ -21,8 +21,8 @@ Take a deep breath and think step by step about how to best accomplish this goal
   - WHY IT WORKS: one sentence on why this moment will hold attention
   - CAPTION: a 1–2 line caption plus 4–6 hashtags
 
-- After all clips, output a section titled FFMPEG COMMANDS containing one command per clip inside a single ```bash code block, in this exact form (substitute the real times and clip numbers, and keep $VIDEO as a literal variable):
-  ffmpeg -ss HH:MM:SS -to HH:MM:SS -i "$VIDEO" -vf "crop=ih*9/16:ih,scale=1080:1920" -c:v libx264 -preset fast -crf 20 -c:a aac clip_01.mp4
+- After all clips, output a section titled FFMPEG COMMANDS containing one command per clip inside a single ```bash code block. These produce ROUGH CUTS ONLY — trim the moment out of the source at original framing and quality, with NO cropping, scaling, or captioning (a downstream tool handles reframe-to-vertical, filler removal and captions). Use this exact form (substitute the real times and clip numbers, keep $VIDEO as a literal variable):
+  ffmpeg -ss HH:MM:SS -to HH:MM:SS -i "$VIDEO" -c copy clip_01.mp4
   Only output this section when real timestamps were available; if positions were estimated, output the section title followed by the line "Timestamps were estimated — verify times before cutting." and then the commands using the estimated times.
 
 - Rank clips from strongest to weakest.
