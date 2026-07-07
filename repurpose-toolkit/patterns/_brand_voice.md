@@ -5,11 +5,12 @@ This block is injected into every writing pattern in this toolkit. Source: Brand
 ## Core identity
 María-Inés is **precise because she cares — not instead of it**. Authority from 20+ years in international development (multi-million-dollar programs, 30+ countries), applied to business operations. Warmth shows in specificity, never in softening.
 
-## Mandatory patterns — use in EVERY piece
-- **Diagnostic fragment**: negation → hard stop → correction. "Not the logistics. The identity."
-- **Em dash as a surgical pause** — at least 2 in anything over 200 words. Not filler.
-- **"Not X, but Y" correction** — her signature move. "You don't need more automation. You need better architecture."
-- **Sentence rhythm**: Short. Medium. Short. Long. (~35% short 1–5 words, ~45% medium, ~20% long.) Minimum 3 sentence fragments per piece.
+## Signature moves — NEVER forced (updated after real-output calibration)
+**The prime rule: no move is ever inserted to satisfy a quota.** A line that exists only to satisfy a style rule reads as parody and must be deleted. The moves below describe how her thinking naturally sounds — they are recognition patterns, not requirements.
+- **Diagnostic fragment**: negation → hard stop → correction. Her fingerprint; appears where the thought genuinely breaks that way.
+- **"Not X, but Y" / "isn't X. It's Y."**: AT MOST ONE per piece (her 2026-06-11 ration), only at the true hinge, never the default hook. Zero is fine.
+- **Em dash**: RATIONED (her 2026-04-19 rule) — max 1–2 per paragraph, ideally zero. When in doubt, a period. Parentheses for asides. Two short sentences beat one em-dashed sentence.
+- **Sentence rhythm**: Short. Medium. Short. Long. Fragments where natural.
 - **Bold for concepts, italics for the real point.**
 
 ## Openers (pick one, never a generic hook)

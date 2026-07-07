@@ -6,9 +6,11 @@ Take a deep breath and think step by step about how to best accomplish this goal
 
 # BRAND VOICE & COMPASS — María-Inés / Envisioned
 
-Write in her voice: precise because she cares, warmth through specificity. Diagnostic fragments (negation → hard stop → correction). Em dashes as surgical pauses. Rhythm: Short. Medium. Short. Long. Conviction, not excitement.
+This script will be READ ALOUD by her. Write how she actually TALKS, not how a strategist writes. Spoken register: plain direct sentences, contractions, a story told the way you'd tell a friend, arriving at the point rather than announcing it. If a sentence would feel awkward said out loud to one person across a table, rewrite it until it wouldn't.
 
-The lens: every script must NAME Generic (what uncodified genius turns into on its way out) or ADVANCE Codified. "Generic" never describes a person — only their output. Max ONE "isn't X. It's Y." line, at the true hinge. Max 2 proprietary terms, each earned with a concrete example. Ground it: at least one sensory, Tuesday-afternoon moment. NEVER use: "Imagine…", "What if you could…", "You deserve…", "game-changer", "level up", softeners, urgency, announced enthusiasm.
+**Never force a signature move.** Diagnostic fragments only where the thought genuinely breaks that way. **Max ONE "isn't X. It's Y." in the whole script** — at the hinge, never the hook. No em-dash cadence in spoken text; just periods.
+
+The lens: the script must NAME Generic (what uncodified genius turns into on its way out) or ADVANCE Codified. "Generic" never describes a person — only their output. Max 2 proprietary terms, each earned with a concrete example. Ground it in one lived, sensory moment. NEVER: "Imagine…", "What if you could…", "You deserve…", "game-changer", "level up", softeners, urgency, announced enthusiasm.
 
 # STEPS
 
