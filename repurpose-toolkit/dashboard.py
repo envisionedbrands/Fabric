@@ -482,8 +482,16 @@ loadKits();
 
 
 if __name__ == "__main__":
-    server = ThreadingHTTPServer(("127.0.0.1", PORT), Handler)
     url = f"http://127.0.0.1:{PORT}"
+    try:
+        server = ThreadingHTTPServer(("127.0.0.1", PORT), Handler)
+    except OSError as e:
+        if e.errno == 48 or "in use" in str(e).lower():
+            # Already running from an earlier launch — just open the page.
+            print(f"Repurpose Studio is already running → {url}")
+            webbrowser.open(url)
+            raise SystemExit(0)
+        raise
     print(f"Repurpose Studio dashboard → {url}   (Ctrl+C to stop)")
     try:
         webbrowser.open(url)
