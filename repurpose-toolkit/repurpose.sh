@@ -26,6 +26,7 @@ CUSTOM_PATTERNS=(
   create_instagram_caption
   create_shorts_clips
   create_youtube_metadata
+  create_shorts_script
 )
 
 # Built-in fabric patterns we also run
