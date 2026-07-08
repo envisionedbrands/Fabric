@@ -34,7 +34,7 @@ For each clip in `shorts_clips.md`: run the **clipify** skill on the cleaned mas
 Important: clipify's own "find funny moments" analysis is NOT used — the moments come from Step 2 (brand-selected). Clipify only cuts, reframes, and captions.
 
 ### Step 4 (optional, on request) — Motion graphics (hyperframes-helper)
-If asked for motion graphics / story cards: run **hyperframes-helper** on the best 1–2 clips using the brand design system (Cormorant Garamond, sage #516b62, glass cards).
+If asked for motion graphics / story cards: run **hyperframes-helper** on the best 1–2 clips, following the style spec in `~/fabric/repurpose-toolkit/motion-style.md` (clean & airy: glass cards, Cormorant + sage, slow eased line-by-line reveals, one element on screen at a time, generous whitespace). Read that file before designing any overlay.
 
 ### Step 5 — Deliver
 Report a single summary: path to the cleaned master, list of finished vertical clips with their pillar tags, and the text-kit folder. Suggest which clip to post first (the one touching the most pillars with the strongest hook).
