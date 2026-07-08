@@ -23,6 +23,13 @@ The visual language for all motion graphics on María-Inés's videos: story card
 - **Quote card:** her sentence verbatim, sage left border, no quotation-mark decoration
 - **CTA card:** one line + one DM word ("DM CODIFY"), gold accent allowed
 
-## Reference calibration — TO FILL IN
-Reference account: instagram.com/instacoachandy (María-Inés likes the clean/airy feel).
-When screenshots or screen recordings of 2–3 favorite reels are provided, note here: exact card shapes, font weights, entrance timing, color temperature, caption position — and adjust the rules above to match what she responds to.
+## Reference calibration — DONE (2026-07-08, from 4 reel frames of instagram.com/instacoachandy)
+What María-Inés responds to in this style, translated to Envisioned tokens:
+
+1. **Pill cards, two-level hierarchy.** Main statement on a white rounded-rectangle pill (bold, generous padding, soft shadow), with a smaller cream sub-pill beneath for the parenthetical/qualifier. Keyword inside the main pill emphasized by COLOR (our sage `#516b62` or gold `#b08d57`), not by animation. Adopt this as the default text-overlay shape.
+2. **Acronym / framework letter tiles.** Stacked rounded-square tiles (cream `#faf9f6` fill, sage letter) spelling a framework letter by letter, revealed sequentially (150ms stagger), each with its definition card sliding in beside it. This is the signature move for teaching her frameworks (MAP, CITC, the Three A's).
+3. **Device mockups as B-roll.** Floating phone frames showing example content over the talking head, annotated with dashed-line highlight boxes around the part being discussed. Use for "look at this example" beats.
+4. **Emoji as one comedic beat.** A single emoji (occasionally repeated ×3 for one beat) as punctuation in a promo/personal moment — then gone. Educational/diagnostic overlays stay emoji-free per brand rules.
+5. **The airiness is the canvas.** Neutral background, overlays never covering the face, one element at a time, generous negative space. Cards are crisp and high-contrast; the calm comes from the space around them.
+
+Keep Envisioned's type system (Cormorant for meaning, Inter for utility) and palette — we adopt her card LANGUAGE, not her fonts/colors.
